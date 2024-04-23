@@ -9,8 +9,8 @@ raw_gt_file = 'dataset/gt.txt'
 train_folder = 'dataset/train'
 val_folder = 'dataset/val'
 test_folder = 'dataset/test'
-train_gt_file = 'dataset/gt_train.txt'
-val_gt_file = 'dataset/gt_val.txt'
+train_gt_file = 'dataset/train_gt.txt'
+val_gt_file = 'dataset/train_gt.txt'
 
 def split_data(gt_file, train_file, val_file, train_ratio=0.8):
 
