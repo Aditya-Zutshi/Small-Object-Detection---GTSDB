@@ -19,7 +19,7 @@ class GermanTrafficSignDataset(torch.utils.data.Dataset):
         self.transform = transform
         self.annotations = pd.read_csv(annotations_file, delimiter=';', header=None)
         self.annotations.columns = ['image_id', 'x1', 'y1', 'x2', 'y2', 'label']
-        self.grouped_data = list(self.annotations.groupby('image_id').groups.items())[:10]
+        self.grouped_data = list(self.annotations.groupby('image_id').groups.items())
 
     def __len__(self):
         return len(self.grouped_data)
