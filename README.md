@@ -10,8 +10,9 @@
      - `TrainIJCNN2013.zip`
 
 2. **Unzip and Organize:**
-   - Create a folder named "dataset" in your project directory.
+   - Create a folder named"dataset" folder in your project directory.
    - Unzip the downloaded `TestIJCNN2013.zip` and `TrainIJCNN2013.zip` files in the dataset folder
+   - Run prepare_dataset.py
 
 ### Project Structure After Setup:
 
@@ -22,11 +23,15 @@ Small-Object-Detection---GTSDB/
 │   ├── train/
 │   │   ├── (training images)
 │   │   └── ...
+│   ├── val/
+│   │   ├── (validation images)
+│   │   └── ...
 │   ├── test/
 │   │   ├── (testing images)
 │   │   └── ...
-│   └── gt.txt
-│
+│   ├── train_gt.txt/
+│   └── val_gt.txt
+│ 
 ├── (other project files and folders)
 └── README.md
 ```

@@ -1,7 +1,6 @@
 
 .DS_Store
 venv/
-dataset/train/
-dataset/test/
+dataset/
 
-
+/.idea

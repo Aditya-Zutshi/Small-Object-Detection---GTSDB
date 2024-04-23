@@ -47,7 +47,7 @@ transform = T.Compose([
 ])
 
 # Load dataset and split into train and validation sets
-dataset = GermanTrafficSignDataset('dataset/train', 'dataset/gt.txt', transform=transform)
+dataset = GermanTrafficSignDataset('dataset/train', 'dataset/train_gt.txt', transform=transform)
 
 # Create data loaders
 dataloader = DataLoader(dataset, batch_size=2, shuffle=True, num_workers=0, collate_fn=collate_fn)
